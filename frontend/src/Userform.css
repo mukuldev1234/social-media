@@ -1,0 +1,85 @@
+/* UserForm.css */
+
+.user-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .user-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  .user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .user-form input[type="text"],
+  .user-form input[type="email"],
+  .user-form input[type="file"],
+  .user-form button {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .user-form input:focus {
+    border-color: #495057;
+    outline: none;
+  }
+  
+  .user-form input[type="file"] {
+    border: none;
+    padding: 5px;
+  }
+  
+  .user-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .user-form button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  @media (max-width: 500px) {
+    .user-form-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .user-form input,
+    .user-form button {
+      font-size: 14px;
+    }
+  }
+  
