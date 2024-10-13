@@ -1,5 +1,7 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+  "routes": [
+    { "source": "/", "destination": "/" },
+    { "source": "/UserForm", "destination": "/" },
+    { "source": "/AdminDashboard", "destination": "/" }
   ]
 }
